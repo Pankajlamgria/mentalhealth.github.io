@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mental stability</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" media="screen and (max-width:500px)" href="mental health.css">
+    <style>
+        html {
+            font-size: 1px;
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .navigation {
+            position: fixed;
+            width: 100vw;
+        }
+
+        .imagecontainer img {
+            width: 100vw;
+            height: 500px;
+        }
+
+        ul {
+            display: flex;
+            background-color: #fffcf7;
+            border: 2px solid #e9e9e9;
+            border-radius: 5px;
+            padding-left: 2px;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 4px;
+            margin: 4px 5px;
+        }
+
+        ul li a {
+            font-family: cursive;
+            color: #2e2d2d;
+            font-size: 18rem;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            text-shadow: 1px 1px 1px rgb(50, 50, 50);
+        }
+
+        .listitem1 {
+            width: 28px;
+            height: 4px;
+            background-color: black;
+            margin: 3px 2px;
+        }
+   
+
+
+        #setting {
+            /* align-items: right; */
+            position: absolute;
+            top: 0px;
+            right: 25px;
+            padding: 8px 0px;
+            transition: all 0.4s ease-in-out;
+        }
+
+        #setting:hover {
+            transform: rotate(90deg);
+        }
+
+        .Facts {
+            flex-wrap: wrap;
+            width: 97vw;
+            background-color: rgb(83, 80, 80);
+            color: aliceblue;
+            border: 4px solid black;
+            margin: 7px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 5px;
+            box-shadow: inset 2px 2px 10px black;
+        }
+
+        .Facts img {
+            height: 63vh;
+            width: 58vw;
+            border: 2px solid grey;
+            margin: 8px 2px;
+        }
+
+        .Facts h2 {
+            margin: 9px;
+            font-size: 29px;
+            font-family: sans-serif;
+            /* position:relative;
+            right:156px; */
+        }
+
+        .Facts li {
+            font-size: 21px;
+        }
+
+        .services {
+            background-color: #ebebeb;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            margin: 4px;
+            /* border: 2px solid black; */
+        }
+
+        .ser {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            /* justify-content: space-around; */
+            align-items: center;
+            margin: 8px;
+            padding: 12px;
+            border: 2px solid red;
+            border-radius: 5px;
+            font-size: 18rem;
+        }
+
+        .ser img {
+            height: 39vh;
+            width: 24vw;
+            margin: 0px 0px 8px 0px;
+        }
+
+        #serid1,
+        #serid2 {
+            width: 45vw;
+        }
+
+        #serid3 {
+            width: 94vw;
+        }
+
+        .ser h3 {
+            text-shadow: 3px 2px 2px grey;
+            font-family: cursive;
+            padding-bottom: 9px;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 18rem;
+            /* border: 2px solid beige; */
+            text-shadow: 3px 2px 2px grey;
+            font-family: cursive;
+            padding-bottom: 9px;
+            padding-top: 20px;
+
+        }
+
+        .support {
+            justify-content: space-evenly;
+            /* background-color: cadetblue;
+             */
+            border: 3px solid pink;
+            border-radius: 5px;
+            display: flex;
+            flex-flow: row wrap;
+            padding: 8px;
+        }
+
+        .folder {
+            display: flex;
+            margin-right: 10rem;
+        }
+
+        .folder h3 {
+            font-size: 15rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .folder img {
+            width: 6vw;
+            height: 7vh;
+        }
+        @media only screen and (max-width:399px){
+            
+            #serid1,#serid2{
+                width: 96vw;
+            }
+            .navigation li a{
+                font-size: 12px ;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li class="listitem"><a href="#home">Home</a></li>
+                <li class="listitem"><a href="#fact">Facts</li></a>
+                <li class="listitem"><a href="#supports">Support</li></a>
+                <li class="listitem"><a href="">Contact Us</li></a>
+                <div id="setting">
+                    <div class="listitem1"></div>
+                    <div class="listitem1"></div>
+                    <div class="listitem1"></div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <!-- <hr> -->
+    <div class="imagecontainer" id="home">
+        <img src="image.jpg" alt="">
+    </div>
+    <div class="heading">
+        <h2>Services Provided to cure Mental Health</h2>
+    </div>
+    <div class="services">
+        <!-- <h2>Sercise Provided to cure Mental Health</h2> -->
+        <div class="ser" id="serid1">
+            <h3>YOGA</h3>
+            <img src="yoga.jpg" alt="">
+            <p>As a form of low-impact exercise, yoga has been shown to lower stress hormones in our bodies while
+                simultaneously increasing beneficial brain chemicals like endorphins and GABA (gamma-aminobutyric acid).
+                These feel-good chemicals help decrease anxiety and improve mood</p>
+        </div>
+        <div class="ser" id="serid2">
+            <h3>EXERCISE</h3>
+            <img src="running.jpg" alt="">
+            <p>“Exercise has a dramatic antidepressive effect,” says Linden. “It blunts the brain's response to physical
+                and emotional stress.” What's more, the hippocampus — the part of the brain associated with memory and
+                learning — has been found to increase in volume in the brains of regular exercisers.</p>
+        </div>
+        <div class="ser" id="serid3">
+            <h3>MEDITATION</h3>
+            <img src="meditation.jpg" alt="">
+            <p>Meditation can give you a sense of calm, peace and balance that can benefit both your emotional
+                well-being and your overall health. You can also use it to relax and cope with stress by refocusing your
+                attention on something calming. Meditation can help you learn to stay centered and keep inner peace.</p>
+        </div>
+    </div>
+    <div class="Facts" id="fact">
+        <img src="unsplash.jpg" alt="">
+        <h2>Some Facts</h2>
+        <ol type="i">
+            <li>More than 50 million Americans struggle with mental illness</li>
+            <li>1 in 5 young people (age 13-18) has or will develop a mental illness in their lifetime.</li>
+            <li>Youth depression rates have risen from 12.9% to 25.2% from pre-pandemic to 2021. Depression symptoms can
+                impact performance in school and interfere with personal relationships</li>
+            <li>Most Americans lack access to adequate mental health treatment. 54.7% of American adults with mental
+                illness did not receive care in the last year</li>
+            <li>Mental illnesses can affect people of any age, race, religion, or income. A mental illness is a medical
+                condition that disrupts a person’s thinking, feeling, mood, and ability to relate to others and daily
+                functioning.</li>
+            <li>Many factors contribute to the development of a mental health condition, including life experiences
+                (such as trauma or a history of abuse), biological factors, and family history of mental illness</li>
+            <li>Depression is the leading cause of disability worldwide.[</li>
+            <li>Members of LGBTQ+ community are almost 3 times more likely to experience a mental health condition such
+                as major depression or generalized anxiety disorder</li>
+            <li>Common signs of mental health issues include: extreme mood swings, changes in eating habits, excessive
+                worrying or fear, problems concentrating, and avoiding friends or social activities.</li>
+            <li>1/2 of all mental illnesses show early signs before a person turns 14 years old, and 3/4 of mental
+                illnesses begin before age 24.</li>
+            <li>More than 1 in 4 adults living with serious mental illnesses also struggles with substance abuse.</li>
+        </ol>
+    </div>
+    <div class="support" id="supports">
+        <div class="folder" id="id1">
+            <img src="instagram.jpg" alt="">
+            <h3>instagram.@123</h3>
+        </div>
+        <div class="folder" id="id2">
+            <img src="twitter.png" alt="">
+            <h3>twitter.@123</h3>
+        </div>
+        <div class="folder" id="id3">
+            <img src="youtube.png" alt="">
+            <h3>youtube.@123</h3>
+        </div>
+        <div class="folder" id="id4">
+            <img src="facebook.png" alt="">
+            <h3>facebook.@123</h3>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+/* *{
+    background-color: aqua;
+} */
+#serid1,#serid2{
+    width: 200px;
+}
+.services{
+    flex-direction: column;
+    justify-content: center;
+}
